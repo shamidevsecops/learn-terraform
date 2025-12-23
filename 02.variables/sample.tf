@@ -15,9 +15,4 @@ output "x11" {
   value = "Value of x1 is ${var.x1}"
 }
 
-# Data types
-# String , Need to be given in double quotes
-# Number, No need of quote
-# Boolean, No need of quote
-
 
