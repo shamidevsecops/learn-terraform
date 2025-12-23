@@ -61,19 +61,3 @@ output "list1_value1" {
 output "map1_name" {
   value = var.map1["name"]
 }
-
-# terraform.tfvars  -> This file will be picked automatically
-variable "x2" {}
-
-# dev.tfvars, prod.tfvars -> this needs to be exclusively passed with -var-file from cli
-variable "x3_env" {}
-
-output "x3_env" {
-  value = var.x3_env
-}
-
-# File name has to be different, but the file needs to be loaded automatically, then auto.tfvars
-variable "x4" {}
-output "x4" {
-  value = var.x4
-}
