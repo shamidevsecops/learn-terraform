@@ -4,7 +4,7 @@ variable "x1" {
 
 output "x1" {
   # variable var.x1 for the direct variable usage
-  value = "$var.x1"
+  value = var.x1
 }
 
 output "x11" {
