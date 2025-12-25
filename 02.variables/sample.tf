@@ -29,7 +29,7 @@ variable "number1" {
 }
 
 variable "number2" {
-  default =100.1
+  default = 100.1
 }
 
 # true or false is supported.
@@ -52,7 +52,7 @@ variable "list1" {
 
 variable "map1" {
   default = {
-    name = "devops"
+    name  = "devops"
     skill = "engineer"
   }
 }
@@ -66,7 +66,7 @@ output "map1_name" {
 }
 
 # terraform.tfvars  -> This file will be picked automatically
-  variable "x2" {}
+variable "x2" {}
 
 # dev.tfvars, prod.tfvars -> this needs to be exclusively passed with -var-file from cli
 variable "x3_env" {}
