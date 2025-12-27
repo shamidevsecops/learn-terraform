@@ -7,7 +7,7 @@ data "vault_generic_secret" "sample" {
 # In general usage, replace "auth_token" with the key you wish to extract from Vault.
 
 provider "vault" {
-  address        = "http:/44.211.83.52:8200"
+  address        = "http://44.211.83.52:8200"
   token = var.token
 }
 
